@@ -1,0 +1,37 @@
+.item {
+  padding: 20px 10px;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.itemText {
+  justify-self: flex-start;
+}
+
+.buttonsContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.itemButton {
+  color: white;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.complete {
+  background-color: lightgreen;
+}
+
+.delete {
+  background-color: tomato;
+}

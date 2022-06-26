@@ -1,0 +1,8 @@
+.userInput {
+  padding: 10px 6px;
+  width: 250px;
+  border: none;
+  border: 1px solid grey;
+  border-radius: 8px;
+  color: grey;
+}
