@@ -6,6 +6,8 @@ import { TodoItem } from "../TodoItem";
 import { CreateTodoButton } from "../CreateTodoButton";
 
 function AppUI({
+  error,
+  loading,
   totalTodos,
   completedTodos,
   searchValue,
@@ -26,6 +28,9 @@ function AppUI({
           <CreateTodoButton />
         </div>
         <TodoList>
+          {error && <p>Hubo un error...</p>}
+          {loading && <p>La pagina esta cargando</p>}
+          {!loading && !searchedTodos.length && <p>Crea tu primera tarea</p>}
           {searchedTodos.map((todo) => (
             <TodoItem
               key={todo.text}
