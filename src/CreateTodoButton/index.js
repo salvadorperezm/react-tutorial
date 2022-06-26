@@ -1,13 +1,12 @@
 import React from "react";
 import "./CreateTodoButton.css";
 
-function CreateTodoButton() {
-  const onClickButton = (message) => alert(message);
+function CreateTodoButton(props) {
+  const onClickButton = () => {
+    props.setOpenModal(true);
+  };
   return (
-    <button
-      className="button"
-      onClick={() => onClickButton("you can add a task")}
-    >
+    <button className="button" onClick={onClickButton}>
       +
     </button>
   );
