@@ -3,10 +3,10 @@ import "./CreateTodoButton.css";
 
 function CreateTodoButton(props) {
   const onClickButton = () => {
-    props.setOpenModal(true);
+    props.setOpenModal((prevState) => !prevState);
   };
   return (
-    <button className="button" onClick={onClickButton}>
+    <button className="button" onClick={onClickButton} type="button">
       +
     </button>
   );

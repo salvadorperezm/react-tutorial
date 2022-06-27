@@ -1,0 +1,38 @@
+form {
+  background-color: white;
+  color: black;
+  width: 300px;
+  height: 200px;
+  border-radius: 8px;
+
+  display: grid;
+  place-items: center;
+}
+
+textarea {
+  height: 50px;
+  padding: 2px;
+}
+
+div {
+  display: flex;
+  column-gap: 20px;
+}
+
+.formButton {
+  border: 1px solid transparent;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.formButton.add {
+  background-color: lightgreen;
+}
+
+.formButton.delete {
+  border: 1px solid tomato;
+  background-color: white;
+  color: tomato;
+}
